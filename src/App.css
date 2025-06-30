@@ -1,0 +1,19 @@
+body, html, #root, .App {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.ship-icon {
+  filter: drop-shadow(0 0 6px #ff0033) drop-shadow(0 0 12px #ff3366);
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff3366 !important;
+}
