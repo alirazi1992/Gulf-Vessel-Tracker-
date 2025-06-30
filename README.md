@@ -98,7 +98,7 @@ The app will be available at http://localhost:3000
    - Netlify
    - GitHub Pages
   
-     ##🧑‍💻 Author
+     ## 🧑‍💻 Author
 
      Made with by **Ali Razi**
      🎓 Data Scientist| React Developer| Ocean Daashboard Enthusiast
