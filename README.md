@@ -84,13 +84,13 @@ The app will be available at http://localhost:3000
 
 ## 📸 Screenshots
 
- ## 🧩 Customization Options 
+## 🧩 Customization Options 
 
  - 🔁 Relace or adjust movement logit `MapView.js` to use direction , current, ore velocity
  - 🧭 Add port makers(e.g., Bandar Abbas, Bushehr) using `Marker` components
  - 🌐 Improve polygon accuracy with official GeoJSON marine data
 
-   ## 🌐 Live Demo
+## 🌐 Live Demo
 
    Deploy it free with:
 
@@ -98,7 +98,7 @@ The app will be available at http://localhost:3000
    - Netlify
    - GitHub Pages
   
-     ## 🧑‍💻 Author
+## 🧑‍💻 Author
 
      Made with by **Ali Razi**
      🎓 Data Scientist| React Developer| Ocean Daashboard Enthusiast
