@@ -80,7 +80,7 @@ npm install
 npm start
 
 ```
-The app will be available at http://192.168.142.241:3000
+The app will be available at [http://192.168.142.241:3000](https://gulf-vessel-tracker-6gwa-git-main-ali-razi-s-projects.vercel.app)
 
 ## 📸 Screenshots
 
