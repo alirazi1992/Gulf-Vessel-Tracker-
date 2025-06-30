@@ -36,7 +36,6 @@ const MapView = () => {
           let newLng = v.lng;
           let foundValidMove = false;
 
-          // Try 10 random directions
           for (let i = 0; i < 10; i++) {
             const latOffset = (Math.random() - 0.5) * 0.05;
             const lngOffset = (Math.random() - 0.5) * 0.05;
@@ -52,13 +51,10 @@ const MapView = () => {
             }
           }
 
-          return foundValidMove
-            ? { ...v, lat: newLat, lng: newLng }
-            : v; // stay in place if no valid move
+          return foundValidMove ? { ...v, lat: newLat, lng: newLng } : v;
         })
       );
 
-      // Save trails
       setTrailHistory(prev => {
         const newTrail = vessels.map(v => ({
           id: v.id,
@@ -117,12 +113,11 @@ const MapView = () => {
         style={{ height: '100vh', marginLeft: '180px' }}
       >
         <TileLayer
-          url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
-          attribution="&copy; Stadia Maps"
-          opacity={1}
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution="&copy; OpenStreetMap contributors"
         />
 
-        {/* Trail */}
+        {/* Trail Markers */}
         {trailHistory.flat().map((trailPoint, i) => (
           <CircleMarker
             key={`${trailPoint.id}-${i}`}
@@ -132,7 +127,7 @@ const MapView = () => {
           />
         ))}
 
-        {/* Ships */}
+        {/* Ship Markers */}
         {vessels
           .filter(v => filter === 'All' || v.type === filter)
           .map(v => (
