@@ -84,6 +84,8 @@ The app will be available at http://localhost:3000
 
 ## 📸 Screenshots
 
+https://github.com/alirazi1992/Gulf-Vessel-Tracker-/blob/main/public/screenshot.png
+
 ## 🧩 Customization Options 
 
  - 🔁 Relace or adjust movement logit `MapView.js` to use direction , current, ore velocity
